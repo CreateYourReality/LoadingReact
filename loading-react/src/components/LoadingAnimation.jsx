@@ -2,9 +2,9 @@ import { useContext } from "react";
 import { loadingContext } from "../Context/Context";
 
 const LoadingAnimation = () => {
-    const {data,setData} = useContext(loadingContext)
+    const {setData} = useContext(loadingContext)
     const DeactivateLoading = () => {
-        const myTimeout = setTimeout(stopLoading, 2500);
+        setTimeout(stopLoading, 2500);
     }
 
     const stopLoading = () => {

@@ -22,8 +22,8 @@ function App() {
           <BrowserRouter>
             <Routes>
               <Route path="/" element={data?<Home/>:<Loading/>}/>
-              <Route path="/about" element={<About/>}/>
-              <Route path="/contact" element={<Contact/>}/>
+              <Route path="/about" element={data?<About/>:<Loading/>}/>
+              <Route path="/contact" element={data?<Contact/>:<Loading/>}/>
             </Routes>
           </BrowserRouter>
         </loadingContext.Provider>  
